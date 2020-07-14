@@ -384,35 +384,20 @@ a:hover{
   padding: 2vh 0vw 10vh 12vw;
 }
 
-.port-img:hover{
-  -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
-  -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
-  box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
-}
+
 .port-project-right{
   padding: 10vh 12vw 10vh 0vw;
 
   float: right;
 }
 
-.port-img{
-  width: 550px;
-  height: auto;
-}
 
 
-@media(max-width:1550px){
-  .port-img{
-    width: 400px;
-    height: auto;
-  }
-}
+
+
 
 @media(max-width:1200px){
-  .port-img{
-    width: 550px;
-    height: auto;
-  }
+
   .port-project-right{
     padding: 2vh 0vw 10vh 12vw;
 
@@ -421,10 +406,7 @@ a:hover{
 }
 
 @media(max-width:750px){
-  .port-img{
-    width: 400px;
-    height: auto;
-  }
+
   .port-project-right{
     padding: 2vh 0vw 10vh 9vw;
   }
@@ -455,12 +437,7 @@ a:hover{
   }
 }
 
-@media(max-width: 525px){
-  .port-img{
-    width: 250px;
-    height:auto;
-  }
-}
+
 
 /* Product Card */
 
@@ -477,6 +454,33 @@ a:hover{
   overflow: hidden;
 }
 
+@media(max-width:1550px){
+  .card{
+    width: 400px;
+    height: 600px;
+  }
+}
+
+@media(max-width:1200px){
+  .card{
+    width: 530px;
+    height: 600px;
+  }
+}
+
+@media(max-width:750px){
+  .card{
+    width: 400px;
+    height: 600px;
+  }
+}
+
+@media(max-width: 525px){
+  .card{
+    width: 250px;
+    height:300px;
+  }
+}
 .card:before{
   content:'';
   position: absolute;
@@ -551,9 +555,9 @@ a:hover{
 .box-description h3{
   color: #8b8b9b;
   font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 2px;
-  margin-right: 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+
   text-align: justify;
   padding: 0px 40px 10px 40px;
   opacity: 0;
@@ -576,4 +580,69 @@ a:hover{
   transform: translateY(0px);
   transition: 0.75s;
   transition-delay: 0.75s;
+}
+
+@media(max-width: 525px){
+  .card:before{
+
+    clip-path: circle(100px at 80% 20%);
+  }
+
+  .card:hover:before{
+    clip-path: circle(200px at 80% -20%);
+  }
+
+  .img-box{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 20px;
+    transition: 0.5s;
+  }
+
+  .card:hover .img-box{
+    top:0%;
+    transform:translateY(350%);
+  }
+
+  .img-box img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:130px;
+  }
+
+  .content-box{
+    height: 60px;
+  }
+
+  .card:hover .content-box{
+    height:145px;
+  }
+
+  .content-box h2{
+
+    font-size: 20px;
+  }
+
+  .content-box .box-description{
+
+    padding: 1px 5px;
+    transition: 0.5s;
+  }
+
+  .box-description h3{
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 0px 20px 0px 30px;
+
+  }
+  .card:hover a{
+
+    font-size: 13px;
+  }
 }
