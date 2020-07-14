@@ -26,7 +26,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <a class="col-md-6 navbar-brand nbar"> <img href="#landing-page" class ="resize" src = "images/nav.png"></a>
+        <a  href="#landing-page" class="col-md-6 navbar-brand nbar"> <img class ="resize" src = "images/nav.png"></a>
 
         <div class = "nav-right">
         <ul class="col-md-6 navbar-nav right-pad">
@@ -106,22 +106,64 @@
             </div>
 
             <div class = "port-project">
-              <a href = "#">
-                <img class = "port-img" src = "images/portfolio1.png">
-              </a>
+              <div class = "container-box">
+                <div class = "card">
+                  <div class = "img-box">
+                    <img src = "images/Beam.png">
+                  </div>
+                  <div class = "content-box">
+                    <h2>BEAM.</h2>
+                    <div class = "box-description">
+                      <h3>BEAM is a mobile platform that allows users to anonymously
+                        talk to those who are facing the same issue as them and
+                        administration officers who have an expertise in psychology.
+                      </h3>
+                    </div>
+                    <a href = "#"> Learn More —> </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
           <div class="col-xl-6">
             <div class = "port-project-right">
-              <a href = "#">
-                <img class = "port-img" src = "images/portfolio1.png">
-              </a>
+              <div class = "container-box">
+                <div class = "card">
+                  <div class = "img-box">
+                    <img src = "images/Beam.png">
+                  </div>
+                  <div class = "content-box">
+                    <h2>BEAM.</h2>
+                    <div class = "box-description">
+                      <h3>BEAM is a mobile platform that allows users to anonymously
+                        talk to those who are facing the same issue as them and
+                        administration officers who have an expertise in psychology.
+                      </h3>
+                    </div>
+                    <a href = "#"> Learn More —> </a>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class = "port-project-right">
-              <a href = "#">
-                <img class = "port-img" src = "images/portfolio1.png">
-              </a>
+              <div class = "container-box">
+                <div class = "card">
+                  <div class = "img-box">
+                    <img src = "images/Beam.png">
+                  </div>
+                  <div class = "content-box">
+                    <h2>BEAM.</h2>
+                    <div class = "box-description">
+                      <h3>BEAM is a mobile platform that allows users to anonymously
+                        talk to those who are facing the same issue as them and
+                        administration officers who have an expertise in psychology.
+                      </h3>
+                    </div>
+                    <a href = "#"> Learn More —> </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
 
@@ -188,13 +230,13 @@
       });
       sr.reveal('.description', {
         duration: 1500,
-        delay: 600,
+        delay: 400,
         origin: 'right',
         distance: '70px'
       });
       sr.reveal('.work', {
         duration: 1500,
-        delay: 900,
+        delay: 500,
         origin: 'right',
         distance: '70px'
       });
@@ -228,7 +270,7 @@
         distance: '50px',
         viewFactor: 0.2
       });
-      sr.reveal('.port-img', {
+      sr.reveal('.container-box', {
         duration: 1000,
         delay: 300,
         origin: 'bottom',
@@ -248,7 +290,7 @@
           }, 1000, function(){
             window.location.hash = hash;
           });
-        } 
+        }
       });
     });
 

@@ -461,3 +461,119 @@ a:hover{
     height:auto;
   }
 }
+
+/* Product Card */
+
+.container-box{
+  position: relative;
+}
+
+.card {
+  position: relative;
+  width: 530px;
+  height: 600px;
+  background: #323346;
+  border-radius:20px;
+  overflow: hidden;
+}
+
+.card:before{
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: #87324a;
+  clip-path: circle(200px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover:before{
+  clip-path: circle(400px at 80% -20%);
+}
+
+.img-box{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.card:hover .img-box{
+  top:0%;
+  transform:translateY(20%);
+}
+
+.img-box img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:270px;
+
+}
+
+.content-box{
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+  font-family: "Karla", bold;
+}
+
+.card:hover .content-box{
+  height:280px;
+}
+
+.content-box h2{
+  position:relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #e8ebf1;
+  font-size: 40px;
+}
+
+.content-box .box-description{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+}
+
+.box-description h3{
+  color: #8b8b9b;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  text-align: justify;
+  padding: 0px 40px 10px 40px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card:hover .box-description h3{
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.card a{
+  opacity:0;
+}
+
+.card:hover a{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.75s;
+  transition-delay: 0.75s;
+}
