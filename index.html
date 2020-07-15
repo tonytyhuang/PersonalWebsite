@@ -37,7 +37,7 @@
             <a class="nav-link" href="#work-sec">Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Disabled</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -179,7 +179,7 @@
   <section class = "contact-section" id = "contact">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7">
           <h3 class = "portfolio">
             — Contact
           </h3>
@@ -190,7 +190,7 @@
             <div class = "explore">
               <a href = "#" > t.tonyhuang@gmail.com —> </a>
             </div>
-
+          <div class = "cform">
             <form class = "contact-form" action = "contact.php" method = "post">
               <input type = "text" name = "name" required = ""
               placeholder="Your Name" class = "form-control">
@@ -199,23 +199,29 @@
               placeholder="Your Email" class = "form-control">
               <br>
               <input type = "text" name = "subject" required = ""
-              placeholder="Subjects" class = "form-control">
+              placeholder="Subject" class = "form-control">
               <br>
-              <textarea name = "message" rows = "8" placeholder="Message">
-              </textarea>
+              <textarea placeholder="Message "class="form-control"
+              name = "message" rows="6"></textarea>
               <br>
-              <button type = "submit" name = "submit"> SUBMIT</button>
+              <button class = "submit" type = "submit" name = "submit">SUBMIT</button>
 
-            <br>
             </form>
+          </div>
+
+
 
           </div>
-          <div class = "col-md-1">
 
-          </div>
           <div class = "col-md-5">
-            <h3 class = "description"> North York, Ontario </h3>
-            <h3 class = "description"> 416 988 3535 </h3>
+            <div class = "cimage1">
+              <img class = "cimage" src = "images/home.png">
+            </div>
+            <h3 class = "contact-info"> North York, Ontario </h3>
+            <div class = "cimage2">
+              <img class = "cimage" src = "images/phone.png">
+            </div>
+            <h3 class = "contact-info">+1 (416)-988-3535 </h3>
           </div>
 
         </div>
