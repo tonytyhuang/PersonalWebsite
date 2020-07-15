@@ -63,6 +63,8 @@
                 <img class = "links sicon" src = "images/git.png"></a>
               <a class = "link-padding" href="https://www.linkedin.com/in/tonytyhuang/">
                 <img class = "links ticon" src = "images/linkedin.png"></a>
+              <a class = "link-padding" href="https://devpost.com/tonytyhuang">
+                <img class = "links foicon" src = "images/devpost.png"></a>
             </div>
 
         </div>
@@ -173,6 +175,54 @@
       </div>
     </div>
 
+    <!--  Work Section End -->
+  <section class = "contact-section" id = "contact">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class = "portfolio">
+            — Contact
+          </h3>
+          <h2 class = "portfolio-work"> Want to Connect? </h2>
+            <h3 class = "project-description"> Let's chat about projects, job
+              opportunities or
+             </h3>
+            <div class = "explore">
+              <a href = "#" > t.tonyhuang@gmail.com —> </a>
+            </div>
+
+            <form class = "contact-form" action = "contact.php" method = "post">
+              <input type = "text" name = "name" required = ""
+              placeholder="Your Name" class = "form-control">
+              <br>
+              <input type = "text" name = "email" required = ""
+              placeholder="Your Email" class = "form-control">
+              <br>
+              <input type = "text" name = "subject" required = ""
+              placeholder="Subjects" class = "form-control">
+              <br>
+              <textarea name = "message" rows = "8" placeholder="Message">
+              </textarea>
+              <br>
+              <button type = "submit" name = "submit"> SUBMIT</button>
+
+            <br>
+            </form>
+
+          </div>
+          <div class = "col-md-1">
+
+          </div>
+          <div class = "col-md-5">
+            <h3 class = "description"> North York, Ontario </h3>
+            <h3 class = "description"> 416 988 3535 </h3>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -215,6 +265,12 @@
       sr.reveal('.ticon', {
         duration: 1500,
         delay: 900,
+        origin: 'right',
+        distance: '70px'
+      });
+      sr.reveal('.foicon', {
+        duration: 1500,
+        delay: 1200,
         origin: 'right',
         distance: '70px'
       });

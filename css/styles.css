@@ -268,7 +268,6 @@
 .work{
   padding: 10vh 0vw 0vh 12vw;
   font-size: 20px;
-  text-decoration: underline
 }
 a{
   color: #ffc35b;
@@ -396,11 +395,6 @@ a:hover{
 
   float: right;
 }
-
-
-
-
-
 
 @media(max-width:1200px){
 
@@ -676,4 +670,17 @@ a:hover{
 
     font-size: 13px;
   }
+}
+/* Product Card End */
+
+/* Work Section End */
+
+/* Contact Section start */
+
+.contact-section{
+  background-image: url('../images/smallbg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+  background-size: cover;
 }
