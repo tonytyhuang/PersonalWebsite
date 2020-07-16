@@ -171,6 +171,7 @@
 
 .link{
   padding: 10vh 0vw 0vh 0vw;
+  overflow: hidden;
 }
 
 .first-link-padding{
@@ -185,6 +186,8 @@
   width: 2rem;
   height: auto;
 }
+
+
 
 @media(max-width: 1200px){
   .l{
@@ -720,4 +723,33 @@ a:hover{
   text-align: center;
   font-size: 20px;
   color: #8b8b9b;
+}
+
+@media(max-width:750px){
+
+  .contact-section{
+    background-image: url('../images/smallbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: cover;
+  }
+  .cform{
+    padding: 0vh 5vw 10vh 9vw;
+  }
+  .cimage1{
+    padding: 0vh 0 0 0;
+  }
+
+  .cimage2{
+    padding: 2vh 0 0 0;
+  }
+  .cimage{
+    width: 3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
 }
