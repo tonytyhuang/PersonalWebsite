@@ -176,57 +176,54 @@
     </div>
 
     <!--  Work Section End -->
-  <section class = "contact-section" id = "contact">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-7">
-          <h3 class = "portfolio">
-            — Contact
-          </h3>
-          <h2 class = "portfolio-work"> Want to Connect? </h2>
-            <h3 class = "project-description"> Let's chat about projects, job
-              opportunities or
-             </h3>
-            <div class = "explore">
-              <a href = "mailto: t.tonyhuang@gmail.com?subject = subject text" > t.tonyhuang@gmail.com —> </a>
+    <section class = "contact-section" id = "contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7">
+            <h3 class = "portfolio">
+              — Contact
+            </h3>
+            <h2 class = "portfolio-work"> Want to Connect? </h2>
+              <h3 class = "project-description"> Let's chat about projects, job
+                opportunities or
+               </h3>
+              <div class = "explore">
+                <a href = "mailto: t.tonyhuang@gmail.com?subject = subject text" > t.tonyhuang@gmail.com —> </a>
+              </div>
+              <div class = "cform">
+                <form class = "contact-form" action = "contact.php" method = "post">
+                  <input type = "text" name = "name" required = ""
+                  placeholder="Your Name" class = "form-control">
+                  <br>
+                  <input type = "text" name = "email" required = ""
+                  placeholder="Your Email" class = "form-control">
+                  <br>
+                  <input type = "text" name = "subject" required = ""
+                  placeholder="Subject" class = "form-control">
+                  <br>
+                  <textarea placeholder="Message "class="form-control"
+                  name = "message" rows="6"></textarea>
+                  <br>
+                  <button class = "submit" type = "submit" name = "submit">SUBMIT</button>
+
+                </form>
+              </div>
             </div>
-          <div class = "cform">
-            <form class = "contact-form" action = "contact.php" method = "post">
-              <input type = "text" name = "name" required = ""
-              placeholder="Your Name" class = "form-control">
-              <br>
-              <input type = "text" name = "email" required = ""
-              placeholder="Your Email" class = "form-control">
-              <br>
-              <input type = "text" name = "subject" required = ""
-              placeholder="Subject" class = "form-control">
-              <br>
-              <textarea placeholder="Message "class="form-control"
-              name = "message" rows="6"></textarea>
-              <br>
-              <button class = "submit" type = "submit" name = "submit">SUBMIT</button>
 
-            </form>
-          </div>
-
-
-
-          </div>
-
-          <div class = "col-md-5">
-            <div class = "cimage1">
-              <img class = "cimage" src = "images/home.png">
+            <div class = "col-md-5 contact-icons">
+              <div class = "cimage1">
+                <img class = "cimage" src = "images/home.png">
+              </div>
+              <h3 class = "contact-inf"> North York, Ontario </h3>
+              <div class = "cimage2">
+                <img class = "cimage" src = "images/phone.png">
+              </div>
+              <h3 class = "contact-inf">+1 (416)-988-3535 </h3>
             </div>
-            <h3 class = "contact-info"> North York, Ontario </h3>
-            <div class = "cimage2">
-              <img class = "cimage" src = "images/phone.png">
-            </div>
-            <h3 class = "contact-info">+1 (416)-988-3535 </h3>
-          </div>
 
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -347,20 +344,14 @@
         distance: '80px',
         viewFactor: 0.01
       });
-      sr.reveal('.cimage', {
-        duration: 1000,
+      sr.reveal('.contact-icons', {
+        duration: 2000,
 
-        origin: 'right',
-        distance: '80px',
+        origin: 'down',
+        distance: '0px',
         viewFactor: 0.01
       });
-      sr.reveal('.contact-info', {
-        duration: 1000,
 
-        origin: 'right',
-        distance: '80px',
-        viewFactor: 0.01
-      });
     </script>
 
     <script>
