@@ -574,7 +574,7 @@ a:hover{
 
 .content-box .box-description{
   display:flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   padding: 8px 20px;
   transition: 0.5s;
@@ -586,7 +586,7 @@ a:hover{
   font-size: 20px;
   letter-spacing: 1px;
 
-  text-align: justify;
+  text-align: left;
   padding: 0px 40px 10px 40px;
   opacity: 0;
   visibility: hidden;
