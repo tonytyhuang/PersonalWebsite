@@ -503,7 +503,7 @@ a:hover{
   left:0;
   width:100%;
   height:100%;
-  background: #0089ce;
+  background: #a94047;
   clip-path: circle(250px at 80% 20%);
   transition: 0.5s ease-in-out;
 }
